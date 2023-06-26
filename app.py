@@ -3,6 +3,7 @@ import pickle
 import pandas as pd 
 import numpy as np  
 from PIL import Image 
+from client import client
 
 
 def main():
@@ -19,13 +20,14 @@ def main():
     """
  st.markdown(html_temp,unsafe_allow_html=True)
  st.subheader("Enter the data:")
- name=st.text_input("Name","Type here")
+ username=st.text_input("Enter Username")
+ account=st.text_input("Enter account_no")
 
- if st.button("Preduct"):
-   
+
+ if st.button("Get bank balance"):
+    amount=client(username,account)
     st.success("Bank balance")   
-    st.subheader("10000000")
+    st.subheader(amount)
     
 if __name__ == "__main__": 
  main()
-
