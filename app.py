@@ -6,14 +6,14 @@ from PIL import Image
 
 
 def main():
- st.title("Depression Analyser")
+ st.title("Bank Application")
  st.write("Please feel free to enter rhe data")
  st.write("[Data is end to end encrypted >](https://google.com)")
  html_temp = """
     <div style="background-color:tomato;padding:10px;margin:20px   .radio-placeholder > .stRadio > label > span {
         color: #999999;
     }">
-    <h2 style="color:white;text-align:center;">Depression Analyser </h2>
+    <h2 style="color:white;text-align:center;">Bank application </h2>
     </div>
     
     """
@@ -23,8 +23,8 @@ def main():
 
  if st.button("Preduct"):
    
-    st.success("Depression level:")   
-    st.subheader(result)
+    st.success("Bank balance")   
+    st.subheader("10000000")
     
 if __name__ == "__main__": 
  main()
